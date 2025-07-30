@@ -1,20 +1,42 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>A4 Document</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-<
-        <div class="page">
-            <h1>Christclubjournal 0001 - 0004</h1>
-            <p> <img src="0001 fresh start.png" width="595" length"842"/></p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Custom Size Background</title>
+    <style>
+        body {
+            background-image: url('your-image.jpg'); /* Replace with your image path */
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: 80% auto; /* Example: 80% width, auto height to maintain aspect ratio */
+            /* Or use: background-size: cover; */
+            /* Or use: background-size: 500px 300px; */
+            /* Or use: background-size: 100vw 100vh; */
+            min-height: 100vh; /* Ensure body takes full viewport height */
+            margin: 0; /* Remove default body margin */
+        }
+
+        .content {
+            padding: 50px;
+            color: #fff;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to Christclub</h1>
+        <p>These journals add value to your life</p>
+<p> <img src="0001 fresh start.png" width="595" length"842"/></p>
  <p><img src="0002 fresh start.png" width="595" length"842"/> </p>
             <p> <img src="0003 mystery of a gift.png" width="595" length"842"/></p>
  <p><img src="0004 mystery of a gift.png" width="595" length"842"/> </p>
-     </div>
-    </body>
-    </html>
-Christclubjournals for Screen
+        <!-- Add more content to enable scrolling -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p>End of content.</p>
+    </div>
+</body>
+</html>
