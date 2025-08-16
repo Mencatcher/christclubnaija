@@ -6,12 +6,13 @@
     <title>Fixed Custom Size Background</title>
 <link rel="stylesheet" href="style.css"/>
     <style>
-html,body
-{ width: 100%;
-height: 100%;
+html,body { 
+    width: 100%;
+height: auto%;
 margin: 0px;
 padding: 0px;
 overflow-x: clip;
+    overflow-y: clip;
 }
         body {
             background-image: url('your-image.jpg'); /* Replace with your image path */
@@ -22,7 +23,7 @@ overflow-x: clip;
             /* Or use: background-size: cover; */
             /* Or use: background-size: 500px 300px; */
             /* Or use: background-size: 100vw 100vh; */
-            min-height: 100%; 
+            min-height: auto%; 
 max-width: 100%;
 /* Ensure body takes full viewport height */
             margin: 0; 
@@ -36,13 +37,12 @@ overflow-x: clip;
             text-align: center;
             background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
         }
-@media all and (max-width: 500px) {
 html,body {
 width: 100%;
-height: 100%;
+height: auto%;
 margin: 0;
 padding: 0;
-overflow-x: hidden;
+overflow-x: clip;
 }
     </style>
 </head>
@@ -59,4 +59,5 @@ overflow-x: hidden;
         <p>End of content.</p>
     </div>
 </body>
+
 </html>
